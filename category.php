@@ -77,15 +77,15 @@ $category_id = $category->term_id;
                     <div class="news__search-close" id="js-news__search-close"></div>
                 </div>
             </div>
-            <ul class="news__register">
-                <li>
-                    <a href="#"><?php echo carbon_get_theme_option('crb_news_register_title' . get_lang()); ?></a>
-                    /
-                </li>
-                <li>
-                    <a href="#"><?php echo carbon_get_theme_option('crb_news_connect_title' . get_lang()); ?></a>
-                </li>
-            </ul>
+<!--            <ul class="news__register">-->
+<!--                <li>-->
+<!--                    <a href="#">--><?php //echo carbon_get_theme_option('crb_news_register_title' . get_lang()); ?><!--</a>-->
+<!--                    /-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">--><?php //echo carbon_get_theme_option('crb_news_connect_title' . get_lang()); ?><!--</a>-->
+<!--                </li>-->
+<!--            </ul>-->
         </div>
 
         <div class="news__content">

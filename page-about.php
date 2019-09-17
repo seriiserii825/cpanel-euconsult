@@ -5,7 +5,7 @@
 get_header();
 
 $page_id = get_the_ID();
-$ramb_bg_img_src = kama_thumb_src('w=651 &h=340 &post_id=' . $page_id . '');
+$ramb_bg_img_src = kama_thumb_src('w=651 &h=140 &post_id=' . $page_id . '');
 ?>
 <?php if (have_posts()): ?>
 	<?php the_post(); ?>

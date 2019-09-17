@@ -190,6 +190,15 @@ body {
 	color: #000;
 	background: white;
 }
+body.category-story,
+body.category-news,
+body.page-template-page-about {
+	background: #f1f1f1;
+}
+body.single {
+	background: #f2f2f2;
+}
+
 
 @media screen and (max-width: 800px) {
 	body {
@@ -1243,6 +1252,7 @@ p {
 
 .reimbursabile.section {
 	padding-bottom: 39px;
+	background: #f1f1f1;
 }
 
 .reimbursabile.section .btn {
@@ -1384,6 +1394,7 @@ p {
 .history.section {
 	padding-top: 39px;
 	padding-bottom: 60px;
+	background: #f1f1f1;
 }
 
 .history.section .section__header {
@@ -1410,7 +1421,7 @@ p {
 
 .history__buttons {
 	position: absolute;
-	top: 57%;
+	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 100%;
@@ -1439,10 +1450,11 @@ p {
 .history-arrow svg {
 	width: 73px;
 	height: 20px;
+	fill: #1A2B6D;
 }
 
 .history-arow--left {
-	left: 0;
+	left: 5px;
 }
 
 .history-arow--left svg {
@@ -1451,7 +1463,7 @@ p {
 }
 
 .history-arow--right {
-	right: 0;
+	right: 5px;
 }
 
 .history__text {
@@ -1623,6 +1635,7 @@ p {
 .partners.section {
 	padding-top: 38px;
 	padding-bottom: 70px;
+	background: #f1f1f1;
 }
 
 .partners .section__header {
@@ -1710,7 +1723,7 @@ p {
 
 .idea__block {
 	padding: 28px 20px 54px;
-	background: white;
+	background: #f9f9f9;
 }
 
 .idea__block h5 {
@@ -1773,6 +1786,7 @@ p {
 .consultation.section {
 	padding-top: 55px;
 	padding-bottom: 53px;
+	background: #f1f1f1;
 }
 
 .consultation .section__title {
@@ -2632,9 +2646,9 @@ p {
 }
 
 .history-succes__text p {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-family: 'Helvetica Light', sans-serif;
-	font-size: 16.8px;
+	font-size: 16px;
 	line-height: 20px;
 	letter-spacing: -0.3px;
 }
@@ -2931,8 +2945,8 @@ p {
 
 .news__search {
 	position: absolute;
-	top: 30px;
-	right: 276px;
+	top: 28px;
+	right: 208px;
 	display: flex;
 	align-items: center;
 	background: white;
@@ -3288,7 +3302,7 @@ p {
 
 .news__single .news__single-content {
 	font-family: 'Helvetica Light', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 28px;
 }
 
@@ -3843,7 +3857,7 @@ p {
 }
 
 .our-services-intro.page-intro {
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 
 .our-services-intro.page-intro p {
@@ -4481,4 +4495,30 @@ p {
 }
 .wpulike-robeen svg .heart {
 	fill: transparent;
+}
+.page-title-services {
+	padding-bottom: 28px;
+	background: #f9f9f9;
+}
+.finance-country .our-services ul li {
+	color: #324158;
+}
+.connect-now {
+	position: relative;
+}
+.form-back {
+	position: absolute;
+	top: 60px;
+	left: -150px;
+}
+
+.form-back input {
+	font-size: 18px;
+	color: #DA5053;
+	border: none;
+	background: none;
+}
+
+.form-back input:hover {
+	cursor: pointer;
 }

@@ -14,7 +14,7 @@
     <meta charset="<?php bloginfo('charset'); ?> ">
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 <?php if ( is_home() || is_front_page() ): ?>
     <div class="navigation" id="js-navigation">
         <div class="navigation__list">

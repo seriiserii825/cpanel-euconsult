@@ -8,9 +8,9 @@
 
 <section class="rambursabile">
 	<?php
-		$ramb_bg_img_src = kama_thumb_src( 'w=1366 &h=639 &post_id=15' );
+		$ramb_bg_img_src = kama_thumb_src( 'w=1366 &h=939 &post_id=15' );
 	?>
-    <section class="rambursabile section-dark page-intro" style="background-image: url('<?php echo $ramb_bg_img_src; ?>'); background-position: center 20%">
+    <section class="rambursabile section-dark page-intro" style="background-image: url('<?php echo $ramb_bg_img_src; ?>'); background-position: center 20%; background-size: cover;">
         <div class="page-intro__container">
             <header class="section__header section__header--center">
                 <h2 class="section__title"><?php the_title(); ?></h2>

@@ -227,6 +227,14 @@ function crb_attach_theme_options()
 				->set_width(30),
 		
 		))
+		->add_tab(__('Back button'), array(
+			Field::make('text', 'crb_back_button_title_ro', __('crb_back_button_title_ro'))
+			     ->set_width(30),
+			Field::make('text', 'crb_back_button_title_ru', __('crb_back_button_title_ru'))
+			     ->set_width(30),
+			Field::make('text', 'crb_back_button_title_en', __('crb_back_button_title_en'))
+			     ->set_width(30),
+		))
 		->add_tab(__('Footer'), array(
 			Field::make('text', 'crb_footer_title_ro', __('crb_footer_title_ro'))
 				->set_width(30),
