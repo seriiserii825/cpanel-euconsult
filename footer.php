@@ -78,7 +78,7 @@
 <div class="socials-bottom">
     <ul class="socials-bottom__list">
         <li class="socials-bottom__item phone">
-            <a href="tel:">
+            <a href="tel:<?php echo clear_phone(carbon_get_theme_option('crb_phone')); ?>">
                 <svg data-bbox="17.052 7.009 15.938 16.944" width="50" height="30" viewBox="0 0 50 30" xmlns="http://www.w3.org/2000/svg">
                     <g>
                         <path d="M21.886 7.46c-.265-.483-.827-.599-1.271-.247l-1.74 1.38c-2.164 1.718-2.44 4.79-.618 6.86l5.96 6.772c1.822 2.07 5.011 2.316 7.13.542l1.313-1.1c.428-.357.444-.946.028-1.322l-2.904-2.63c-.412-.373-1.105-.404-1.54-.076l-1.714 1.296-4.843-5.353 1.743-1.259c.446-.321.595-.97.327-1.457l-1.87-3.406z" fill-rule="evenodd"></path>
@@ -87,7 +87,7 @@
             </a>
         </li>
         <li class="socials-bottom__item facebook">
-            <a href="#">
+            <a href="<?php echo carbon_get_theme_option('crb_facebook'); ?>">
                 <svg data-bbox="17 6 17 17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" height="30" width="50" data-type="shape">
                     <g>
                         <path d="M33.062 23H17.938a.938.938 0 0 1-.938-.938V6.938c0-.518.42-.938.938-.938h15.124c.518 0 .938.42.938.938v15.124c0 .518-.42.938-.938.938zm-4.547 0v-6.462h2.228l.334-2.518h-2.562v-1.608c0-.73.208-1.227 1.282-1.227h1.37V8.933c-.237-.031-1.05-.1-1.996-.1-1.974 0-3.326 1.174-3.326 3.329v1.858H23.61v2.518h2.234V23h2.67z" fill-rule="evenodd"></path>

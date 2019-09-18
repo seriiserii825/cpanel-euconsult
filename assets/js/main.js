@@ -228,9 +228,16 @@ jQuery(document).ready(function ($) {
 
 	let rusLang = function () {
 		let url = location.href;
-		if (url == 'http://wp-euconsult.loc/ru/') {
+		if (url == 'https://euconsult.md/ru/') {
 			$('.finance-gallery').addClass('rus');
 		}
 	};
 	rusLang();
+	
+	$('#js-main-menu a[href="#js-footer"]').on('click', function () {
+		if($(window).width() < 1300){
+			$('#js-main-menu').removeClass('active');
+			$('.sandwitch').removeClass('sandwitch--active');
+		}
+	});
 });
