@@ -254,4 +254,24 @@ jQuery(document).ready(function ($) {
 		}
 	};
 	mainMenuFirstItemActive();
+
+	let mainMenuActiveElemOfSubMenu = function () {
+		let url = location.href;
+		let finance = 'finance';
+		let news = 'news';
+		let idea = 'idea';
+
+		if(url.includes(finance)) {
+			$('#js-main-menu li:nth-child(4)').addClass('current-menu-item');
+		}
+
+		if(url.includes(news)) {
+			$('#js-main-menu li:nth-child(7)').addClass('current-menu-item');
+		}
+
+		if(url.includes(idea)) {
+			$('#js-main-menu li:nth-child(6)').addClass('current-menu-item');
+		}
+	};
+	mainMenuActiveElemOfSubMenu();
 });

@@ -6,9 +6,7 @@
 
 	function get_short_text_clear( $content, $count ) {
 		$short_text       = $content;
-		$short_text_count = substr( $short_text, 0, $count );
-
-		return $short_text_count;
+		return mb_substr( $short_text, 0, $count );
 	}
 
 	if ( function_exists( ‘wp_ulike’ ) ) {
@@ -40,10 +38,10 @@
 	}
 
 
-	function getThePostThumbSrc() {
+	function getThePostThumbSrc($width, $height) {
 		$id = get_the_ID();
 
-		return kama_thumb_src( 'w=1905 &h=940 &post_id=' . $id . '' );
+		return kama_thumb_src( 'w='.$width.' &h='.$height.' &post_id=' . $id . '' );
 	}
 
 	function clear_phone( $phone ) {

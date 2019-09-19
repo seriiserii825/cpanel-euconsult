@@ -75,7 +75,14 @@ function crb_attach_idea_options()
 				->set_width(30),
 			Field::make('textarea', 'crb_idea_subtitle_cite_en', __('crb_idea_subtitle_cite en'))
 				->set_width(30),
-			
+
+			Field::make('textarea', 'crb_idea_short_text_ro', __('crb_idea_short_text ro'))
+			     ->set_width(30),
+			Field::make('textarea', 'crb_idea_short_text_ru', __('crb_idea_short_text ru'))
+			     ->set_width(30),
+			Field::make('textarea', 'crb_idea_short_text_en', __('crb_idea_short_text en'))
+			     ->set_width(30),
+
 			Field::make('text', 'crb_idea_first_line_link_ro', __('crb_idea_first_line_link ro'))
 				->set_width(30),
 			Field::make('text', 'crb_idea_first_line_link_ru', __('crb_idea_first_line_link ru'))
