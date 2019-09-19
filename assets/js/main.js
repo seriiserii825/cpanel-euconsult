@@ -30,13 +30,19 @@ jQuery(document).ready(function ($) {
 			$('#js-partners__slider').slick({
 				arrows: false,
 				dots: true,
-				slidesToShow: 3,
-				slidesToScroll: 3,
+				slidesToShow: 2,
+				slidesToScroll: 2,
 				responsive: [{
 					breakpoint: 900,
 					settings: {
 						slidesToShow: 2,
 						slidesToScroll: 2,
+					}
+				},{
+					breakpoint: 500,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
 					}
 				}]
 			});
@@ -60,7 +66,7 @@ jQuery(document).ready(function ($) {
 				slidesToShow: 2,
 				slidesToScroll: 2,
 				responsive: [{
-					breakpoint: 1088,
+					breakpoint: 1250,
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
@@ -228,7 +234,7 @@ jQuery(document).ready(function ($) {
 
 	let rusLang = function () {
 		let url = location.href;
-		if (url == 'https://euconsult.md/ru/') {
+		if (url == 'https://euconsult.md/ru/' || url == 'https://euconsult.md/ru/finantari-nerambursabile/') {
 			$('.finance-gallery').addClass('rus');
 		}
 	};
@@ -240,4 +246,12 @@ jQuery(document).ready(function ($) {
 			$('.sandwitch').removeClass('sandwitch--active');
 		}
 	});
+
+	let mainMenuFirstItemActive = function () {
+		let url = location.href;
+		if (url == 'https://euconsult.md/ru/' || url == 'https://euconsult.md/en/') {
+			$('#js-main-menu li:first-child').addClass('current-menu-item');
+		}
+	};
+	mainMenuFirstItemActive();
 });

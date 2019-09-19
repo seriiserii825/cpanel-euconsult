@@ -36,8 +36,9 @@
                     <a href="mailto:<?php echo $gmail; ?>"><?php echo $gmail; ?></a>
                 </li>
                 <li>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/i/svg/facebook-logo.svg">
-                    <a href="#"></a>
+                    <a href="<?php echo $facebook; ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/i/svg/facebook-logo.svg">
+                    </a>
                 </li>
             </ul>
         </div>

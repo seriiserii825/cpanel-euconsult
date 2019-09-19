@@ -10,6 +10,7 @@
 	function bs_euconsult_scripts() {
 		wp_enqueue_style( 'bs-euconsult-style', get_stylesheet_uri() );
 		wp_enqueue_style( 'bs-euconsult--my-style', get_template_directory_uri().'/assets/css/my.css');
+		wp_enqueue_style( 'bs-euconsult--bs-media-style', get_template_directory_uri().'/assets/css/bs-media.css');
 
 		wp_deregister_script( 'jquery' );
 		wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');

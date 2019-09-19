@@ -1010,7 +1010,7 @@ p {
 }
 
 .main-menu.active li.current-menu-item {
-	color: darkred;
+	color: #fccc1c;
 }
 
 .main-menu.active li a {
@@ -1226,7 +1226,7 @@ p {
 
 .index-intro-contacts__list li:last-child img {
 	position: relative;
-	top: -7px;
+	/*top: -7px;*/
 	right: -2px;
 	width: auto;
 	height: 20px;
@@ -1293,7 +1293,7 @@ p {
 .finance-gallery.rus .finance-gallery__content a {
 	font-family: 'Helvetica Light', sans-serif;
 	font-size: 15px;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .finance-gallery.section {
@@ -1429,12 +1429,6 @@ p {
 	z-index: 10000;
 }
 
-@media screen and (max-width: 882px) {
-	.history__buttons {
-		display: none;
-	}
-}
-
 .history-arrow {
 	position: absolute;
 	opacity: 1;
@@ -1454,7 +1448,7 @@ p {
 }
 
 .history-arow--left {
-	left: 5px;
+	left: 100px;
 }
 
 .history-arow--left svg {
@@ -1463,7 +1457,7 @@ p {
 }
 
 .history-arow--right {
-	right: 5px;
+	right: 100px;
 }
 
 .history__text {
@@ -2966,6 +2960,7 @@ p {
 	padding-top: 2px;
 	width: 20px;
 	height: 20px;
+	background: #f2f2f2;
 	cursor: pointer;
 }
 
@@ -3438,6 +3433,7 @@ p {
 
 .last-posts-content h3 {
 	margin-bottom: 25px;
+	height: 42px;
 	font-family: 'Spinnaker', sans-serif;
 	font-size: 18px;
 	font-weight: normal;
@@ -3452,6 +3448,14 @@ p {
 .last-posts__text .news__item-footer {
 	padding-top: 10px;
 	border-top: 1px solid #cecece;
+}
+.last-posts .news__show {
+	display: flex;
+	align-items: center;
+}
+
+.last-posts .news__show svg {
+	margin-right: 6px;
 }
 
 .last-posts__text a {
@@ -3512,7 +3516,7 @@ p {
 }
 
 .single-idea__container::after {
-	bottom: 140px;
+	bottom: 118px;
 }
 
 .single-idea__container strong,
@@ -3802,7 +3806,7 @@ p {
 
 @media screen and (max-width: 1300px) {
 	.main-menu li.current-menu-item a {
-		color: #D41317;
+		color: #fccc1c;
 	}
 
 	.main-menu li:first-child {
@@ -3998,10 +4002,6 @@ p {
 
 	.history__text {
 		font-size: 15px;
-	}
-
-	.history__slider-wrap {
-		height: 216px;
 	}
 
 	.sandwitch-wrap {
@@ -4348,6 +4348,7 @@ p {
 	.news__item {
 		margin-left: 0;
 		margin-right: 0;
+		margin-bottom: 40px;
 		padding: 0;
 		max-width: 600px;
 	}
@@ -4550,3 +4551,23 @@ p {
 	}
 }
 
+.popup__form div.wpcf7-mail-sent-ok {
+	color: white;
+}
+
+.page-title-services .section__title::after {
+	bottom: -8px;
+}
+
+.our-services__item .our-services__title {
+	word-break: break-word;
+}
+@media screen and (max-width: 1250px) {
+	.idea__slide-content {
+		margin: 0 auto;
+		max-width: 502px;
+	}
+	.idea__content {
+		max-width: 800px;
+	}
+}
