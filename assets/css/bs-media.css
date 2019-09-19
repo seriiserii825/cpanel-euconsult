@@ -42,6 +42,11 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+	.partners .slick-slide img {
+		width: 240px;
+		height: auto;
+	}
 }
 @media screen and (max-width: 560px) {
 	.idea__slide {
@@ -51,6 +56,12 @@
 		width: 46px;
 	}
 }
+@media screen and (max-width: 400px) {
+	.partners__img {
+		padding: 0 10px;
+	}
+}
+
 @media screen and (max-width: 380px) {
 	.history__text {
 		max-width: 260px;
