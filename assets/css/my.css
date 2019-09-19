@@ -3851,6 +3851,7 @@ p {
 
 .header__content .logo a {
 	display: inline-block;
+	width: 212px;
 }
 
 .finance-country .our-services__title {
