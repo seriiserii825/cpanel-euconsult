@@ -32,7 +32,7 @@ get_header();
 			<?php if($finance_romania->have_posts()): ?>
 				<?php $i = 1; while($finance_romania->have_posts()): ?>
 					<?php $finance_romania->the_post(); ?>
-                    <div class="our-services__item <?php if($i % 2 !== 0) echo 'our-services__item--dark'; ?>">
+                    <div id="js-romania-<?php echo $i; ?>" class="our-services__item <?php if($i % 2 !== 0) echo 'our-services__item--dark'; ?>">
                         <div class="our-services__container">
                             <div class="our-services__content">
                                 <header class="our-sevices__header">

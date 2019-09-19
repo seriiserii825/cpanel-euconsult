@@ -31,7 +31,7 @@ get_header();
             <?php if($finance_moldova->have_posts()): ?>
                 <?php $i = 1; while($finance_moldova->have_posts()): ?>
                     <?php $finance_moldova->the_post(); ?>
-                    <div class="our-services__item <?php if($i % 2 !== 0) echo 'our-services__item--dark'; ?>">
+                    <div id="js-moldova-<?php echo $i; ?>" class="our-services__item <?php if($i % 2 !== 0) echo 'our-services__item--dark'; ?>">
                         <div class="our-services__container">
                             <div class="our-services__content">
                                 <header class="our-sevices__header">

@@ -14,12 +14,12 @@
 			?>
             <ul class="list">
 				<?php if ($finance_moldova->have_posts()): ?>
-					<?php while ($finance_moldova->have_posts()): ?>
+					<?php $i = 1; while ($finance_moldova->have_posts()): ?>
 						<?php $finance_moldova->the_post(); ?>
                         <li>
-                            <a href="<?php echo $moldova_page_link; ?>"><?php the_title(); ?></a>
+                            <a href="<?php echo $moldova_page_link.'#js-moldova-'.$i; ?>"><?php the_title(); ?></a>
                         </li>
-					<?php endwhile; ?>
+					<?php $i++; endwhile; ?>
                     <?php wp_reset_postdata(); ?>
 				<?php else: ?>
 				<?php endif; ?>
@@ -43,12 +43,12 @@
 
             <ul class="list">
 		        <?php if ($finance_romania->have_posts()): ?>
-			        <?php while ($finance_romania->have_posts()): ?>
+			        <?php $i=1; while ($finance_romania->have_posts()): ?>
 				        <?php $finance_romania->the_post(); ?>
                         <li>
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            <a href="<?php echo $romania_page_link.'#js-romania-'.$i; ?>"><?php the_title(); ?></a>
                         </li>
-			        <?php endwhile; ?>
+			        <?php $i++; endwhile; ?>
 			        <?php wp_reset_postdata(); ?>
 		        <?php else: ?>
 		        <?php endif; ?>
