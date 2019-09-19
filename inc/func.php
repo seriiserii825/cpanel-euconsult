@@ -23,9 +23,9 @@
 		$pos_ro        = strpos( $short_text, $text_ro ) + 5;
 		$pos_ru        = strpos( $short_text, $text_ru ) + 5;
 		$pos_en        = strpos( $short_text, $text_en ) + 5;
-		$short_text_ro = substr( $short_text, $pos_ro, $count );
-		$short_text_ru = substr( $short_text, $pos_ru, $count );
-		$short_text_en = substr( $short_text, $pos_en, $count );
+		$short_text_ro = mb_substr( $short_text, $pos_ro, $count );
+		$short_text_ru = mb_substr( $short_text, $pos_ru, $count );
+		$short_text_en = mb_substr( $short_text, $pos_en, $count );
 		if ( get_lang() === '_ro' ) {
 			$short_text = $short_text_ro;
 		} elseif ( get_lang() === '_ru' ) {

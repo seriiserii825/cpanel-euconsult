@@ -51,7 +51,7 @@ get_header();
                                 <a href="<?php the_permalink(); ?>">
 									<?php echo carbon_get_the_post_meta('crb_idea_first_line_link' . get_lang()); ?>
                                 </a>
-                                <p><?php echo get_short_text(get_the_content(), 180) ?>...</p>
+                                <p><?php echo get_short_text(get_the_content(), 200) ?>...</p>
                                 <a class="read-more"
                                    href="<?php the_permalink(); ?>"><?php echo carbon_get_theme_option('crb_idea_button_read_more' . get_lang()); ?></a>
                             </div>
