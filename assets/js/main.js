@@ -252,6 +252,8 @@ jQuery(document).ready(function ($) {
 	let mainMenuActiveElemOfSubMenu = function () {
 		let url = location.href;
 		let finance = 'finance';
+		let moldova = 'moldova';
+		let romania = 'romania';
 		let news = 'news';
 		let idea = 'idea';
 
@@ -265,6 +267,10 @@ jQuery(document).ready(function ($) {
 
 		if(url.includes(idea)) {
 			$('#js-main-menu li:nth-child(6)').addClass('current-menu-item');
+		}
+
+		if(url.includes(moldova) || url.includes(romania)) {
+			$('#js-main-menu li:nth-child(4)').addClass('current-menu-item');
 		}
 	};
 	mainMenuActiveElemOfSubMenu();
