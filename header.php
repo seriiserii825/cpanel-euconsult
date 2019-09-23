@@ -13,10 +13,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="<?php bloginfo('charset'); ?> ">
 	<?php wp_head(); ?>
-<!--    <script src="//code.jivosite.com/widget.js" data-jv-id="2hh5yw4c1V" async></script>-->
-<!--    <script src="//code.jivosite.com/widget.js" data-jv-id="8sk4gGzrKe" async></script>-->
-<!--    <script src="//code.jivosite.com/widget.js" data-jv-id="J3ZeaDRhMG" async></script>-->
-<!--    <script src="//code.jivosite.com/widget.js" data-jv-id="Xczl7rOLj1" async></script>-->
+
+    <?php if(get_lang() == '_ru'): ?>
+        <script src="//code.jivosite.com/widget.js" data-jv-id="J3ZeaDRhMG" async></script>
+    <?php elseif(get_lang() == '_en'): ?>
+        <script src="//code.jivosite.com/widget.js" data-jv-id="Xczl7rOLj1" async></script>
+    <?php else:  ?>
+        <script src="//code.jivosite.com/widget.js" data-jv-id="8sk4gGzrKe" async></script>
+    <?php endif; ?>
 </head>
 <body <?php body_class(); ?>>
 <?php if ( is_home() || is_front_page() ): ?>
@@ -75,3 +79,4 @@
         </div>
     </div>
 </header>
+
