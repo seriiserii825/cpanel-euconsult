@@ -4576,3 +4576,6 @@ p {
 	/*width: 280px;*/
 	height: 70px;
 }
+.popup .wpcf7-validation-errors {
+	color: white;
+}
