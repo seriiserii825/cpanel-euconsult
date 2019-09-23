@@ -163,7 +163,7 @@
 			<?php foreach ( $partners as $partner ): ?>
                 <div class="partners__slide">
                     <div class="partners__img">
-                        <a href="<?php echo $partner['crb_partners_text']; ?>">
+                        <a href="<?php echo $partner['crb_partners_text'.get_lang()]; ?>">
                             <img src="<?php echo $partner['crb_partners_img']; ?>">
                         </a>
                     </div>

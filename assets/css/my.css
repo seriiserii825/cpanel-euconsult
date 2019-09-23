@@ -4572,6 +4572,10 @@ p {
 		max-width: 800px;
 	}
 }
+
+.partners .slick-slide a {
+	height: 70px;
+}
 .partners .slick-slide img {
 	/*width: 280px;*/
 	height: 70px;
