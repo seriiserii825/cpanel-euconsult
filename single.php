@@ -6,7 +6,7 @@
 	$category_name = $category[0]->name;
 	?>
     <section class="news single-news">
-        <section class="section-dark page-intro" style="background-image: url('<?php echo getThePostThumbSrc(1920, 340); ?>'); background-position: center 18%">
+        <section class="section-dark page-intro" style="background-image: url('<?php echo getThePostThumbSrc(1920, 440); ?>'); background-position: center 18%">
             <div class="page-intro__container">
                 <header class="section__header section__header--center">
                     <h2 class="section__title"><?php the_title(); ?></h2>

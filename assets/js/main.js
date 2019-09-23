@@ -41,11 +41,11 @@ jQuery(document).ready(function ($) {
 				}]
 			});
 
-			$('.partners .slider__arrow-left').on('click', function (e) {
+			$('.partners .slider__arrow-right').on('click', function (e) {
 				$('#js-partners__slider').slick('slickNext');
 			});
 
-			$('.partners .slider__arrow-right').on('click', function (e) {
+			$('.partners .slider__arrow-left').on('click', function (e) {
 				$('#js-partners__slider').slick('slickPrev');
 			});
 		};
@@ -69,11 +69,11 @@ jQuery(document).ready(function ($) {
 				}]
 			});
 
-			$('.idea .slider__arrow-left').on('click', function (e) {
+			$('.idea .slider__arrow-right').on('click', function (e) {
 				$('#js-idea__slider').slick('slickNext');
 			});
 
-			$('.idea .slider__arrow-right').on('click', function (e) {
+			$('.idea .slider__arrow-left').on('click', function (e) {
 				$('#js-idea__slider').slick('slickPrev');
 			});
 		};

@@ -262,7 +262,7 @@ p {
 
 .navigation {
 	position: fixed;
-	top: 50%;
+	top: 20%;
 	right: 20px;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);

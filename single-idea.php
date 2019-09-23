@@ -3,7 +3,7 @@
 <?php if (have_posts()): ?>
 	<?php the_post(); ?>
     <section class="single-idea section-dark page-intro"
-             style="background-image: url('<?php echo getThePostThumbSrc(1920, 670) ?>'); background-position: center top">
+             style="background-image: url('<?php echo getThePostThumbSrc(1920, 470) ?>'); background-position: center top">
         <div class="page-intro__container">
             <header class="section__header section__header--center">
                 <h2 class="section__title">
