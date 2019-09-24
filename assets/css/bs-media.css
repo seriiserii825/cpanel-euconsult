@@ -44,8 +44,17 @@
 	}
 
 	.partners .slick-slide img {
-		width: 240px;
+		width: 280px;
 		height: auto;
+	}
+	.partners .slick-slide a {
+		height: auto;
+	}
+	.partners__img {
+		align-items: center;
+	}
+	.page-about__connect-now .connect-now {
+		left: 0;
 	}
 }
 @media screen and (max-width: 560px) {
@@ -56,6 +65,13 @@
 		width: 46px;
 	}
 }
+@media screen and (max-width: 500px) {
+	.header__content .logo a {
+		position: relative;
+		right: 20px;
+	}
+}
+
 @media screen and (max-width: 400px) {
 	.partners__img {
 		padding: 0 10px;

@@ -867,7 +867,7 @@ p {
 	opacity: 1;
 	cursor: pointer;
 	transition: all .4s;
-	z-index: 10000;
+	z-index: 1000;
 }
 
 .slider__arrow:hover {
@@ -915,7 +915,7 @@ p {
 @media screen and (max-width: 500px) {
 	.wpglobus-lang {
 		position: absolute;
-		top: 100px;
+		top: 90px;
 		left: 50%;
 		transform: translateX(-50%);
 		margin-left: 0;
@@ -1426,7 +1426,7 @@ p {
 	transform: translateY(-50%);
 	width: 100%;
 	height: 74px;
-	z-index: 10000;
+	z-index: 1000;
 }
 
 .history-arrow {
@@ -2759,10 +2759,6 @@ p {
 	margin-bottom: 49px;
 }
 
-.news .section__title {
-	padding-bottom: 2px;
-}
-
 .news .section__title::after {
 	content: '';
 	width: 120px;
@@ -3284,7 +3280,7 @@ p {
 }
 
 .news__single-title {
-	margin-bottom: 64px;
+	margin-bottom: 44px;
 	font-family: 'Spinnaker', sans-serif;
 	font-size: 40px;
 }
@@ -4211,8 +4207,8 @@ p {
 	}
 
 	.rambursabile.page-intro {
-		padding-top: 40px;
-		padding-bottom: 36px;
+		padding-top: 70px;
+		padding-bottom: 16px;
 	}
 
 	.rambursabile .page-intro p {
