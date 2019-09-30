@@ -14,7 +14,7 @@
                 <p><?php echo carbon_get_theme_option('crb_finance_single_text' . get_lang()); ?></p>
             </div>
         </section>
-        <section class="finance-single__container">
+        <section class="finance-single__container finance-single__bottom">
             <?php get_sidebar(); ?>
             <section class="main-single">
 				<?php the_content(); ?>

@@ -9,7 +9,7 @@
 
 	add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 	function crb_attach_theme_options() {
-		$basic_options_container = Container::make( 'theme_options', __( 'Basic Options' ) )
+		$basic_options_container = Container::make( 'theme_options', __( 'Carbon Fields' ) )
 		                                    ->add_tab( __( 'Contacts' ), array(
 			                                    Field::make( 'text', 'crb_address_ro', __( 'address ro' ) )
 			                                         ->set_width( 30 ),
@@ -400,6 +400,18 @@
 			         Field::make( 'text', 'crb_news_connect_title_ru', __( 'Block news_connect_title ru' ) )
 			              ->set_width( 30 ),
 			         Field::make( 'text', 'crb_news_connect_title_en', __( 'Block news_connect_title en' ) )
+			              ->set_width( 30 ),
+		         ) );
+
+		// Add second options page under 'Basic Options'
+		Container::make( 'theme_options', 'Video' )
+		         ->set_page_parent( $basic_options_container )// reference to a top level container
+		         ->add_tab( __( 'Register' ), array(
+			         Field::make( 'text', 'crb_video_title_ro', __( 'Block video_title ro' ) )
+			              ->set_width( 30 ),
+			         Field::make( 'text', 'crb_video_title_ru', __( 'Block video_title ru' ) )
+			              ->set_width( 30 ),
+			         Field::make( 'text', 'crb_video_title_en', __( 'Block video_title en' ) )
 			              ->set_width( 30 ),
 		         ) );
 

@@ -29,7 +29,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php bs_euconsult_post_thumbnail(); ?>
+<!--	--><?php //bs_euconsult_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -54,6 +54,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php bs_euconsult_entry_footer(); ?>
+<!--		--><?php //bs_euconsult_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1,5 +1,5 @@
 <sidebar class="sidebar">
-    <div class="widget-countries">
+    <div class="widget-countries line-bottom">
         <div class="widget__item">
             <?php $moldova_page_link = get_page_link(82); ?>
             <h3>
@@ -26,7 +26,6 @@
             </ul>
 
         </div>
-	
 
         <div class="widget__item">
 	        <?php $romania_page_link = get_page_link(84); ?>
@@ -54,6 +53,7 @@
 		        <?php endif; ?>
             </ul>
         </div>
+
         <div class="widget__item">
 	        <?php $eu_page_link = get_page_link(86); ?>
             <h3>

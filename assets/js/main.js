@@ -1,4 +1,5 @@
 jQuery(document).ready(function ($) {
+	// $("body").on("contextmenu", false);
 
 	if ($('#js-history-slider').length) {
 		let historySlider = function () {
@@ -274,4 +275,12 @@ jQuery(document).ready(function ($) {
 		}
 	};
 	mainMenuActiveElemOfSubMenu();
+
+	let disabelVideoBar = function () {
+		$('.flowplayer .fp-ui').on('click', function () {
+			alert('ok');
+			return false;
+		});
+	};
+	disabelVideoBar();
 });
