@@ -4587,11 +4587,11 @@ p {
 .popup .wpcf7-validation-errors {
 	color: white;
 }
-video {
-	width: 100%;
-	height: auto;
-	max-height: 100%;
-}
+/*video {*/
+/*	width: 100%;*/
+/*	height: auto;*/
+/*	max-height: 100%;*/
+/*}*/
 .page-title.taxonomy {
 	padding-top: 0;
 	padding-bottom: 20px;
