@@ -80,7 +80,9 @@
                     <div class="finance-gallery__after"></div>
                     <div class="finance-gallery__content">
                         <a href="<?php the_permalink(); ?>">
-							<?php echo kama_thumb_img( 'w=309 &h=210' ); ?>
+<!--							--><?php //echo kama_thumb_img( 'w=309 &h=210' ); ?>
+<!--							--><?php //echo kama_thumb_img( 'w=618 &h=420' ); ?>
+	                        <?php echo kama_thumb_img( 'w=927 &h=630' ); ?>
                         </a>
                         <h6>
                             <a href="<?php the_permalink(); ?>"><?php the_title(); ?> ></a>
